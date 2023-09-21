@@ -1,4 +1,3 @@
-import { Typography } from '@mui/material'
 import React from 'react'
 import { StyledJobSection } from './style'
 import JobTabs from './components/Tabs'
