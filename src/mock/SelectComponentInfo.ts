@@ -12,36 +12,39 @@ export interface SelectOption {
     {
       label: 'Find Work',
       options: [
-        { label: 'Job Seekers', value: 1 },
-        { label: 'Employers', value: 2 },
-        { label: 'Manager', value: 3 },
-        { label: 'Client', value: 4 },
+        { label: 'Find Work', value: 1 },
+        { label: 'Saved Jobs', value: 2 },
+        { label: 'Proposal', value: 3 },
+        { label: 'Profile', value: 4 },
+        { label: 'My State', value: 5 },
+        { label: 'My Project Dashboard', value: 6 },
       ],
     },
     {
       label: 'My Jobs',
       options: [
-        { label: 'Job Seekers', value: 1 },
-        { label: 'Employers', value: 2 },
-        { label: 'Manager', value: 3 },
-        { label: 'Client', value: 4 },
+        { label: 'My Jobs', value: 1 },
+        { label: 'All Contracts', value: 2 },
+        { label: 'Work Diary', value: 3 },
       ],
     },
     {
       label: 'Reports',
       options: [
-        { label: 'Job Seekers', value: 1 },
-        { label: 'Employers', value: 2 },
-        { label: 'Manager', value: 3 },
-        { label: 'Client', value: 4 },
-      ],
+        { label: 'OvervIEW', value: 1 },
+        { label: 'mY Reports', value: 2 },
+        { label: 'Billings & Earning', value: 3 },
+        { label: 'Connects Hostory', value: 4 },
+        { label: 'Transaction History', value: 5 },
+        { label: 'Certificate of Earning', value: 6 },
+      ]
     },
     {
       label: 'Jobs',
       options: [
-        { value: 'option1', label: 'Option 1' },
-        { value: 'option2', label: 'Option 2' },
-        { value: 'option3', label: 'Option 3' },
+        { value: 'option1', label: 'Jobs' },
+        { value: 'option2', label: 'Talent' },
+        { value: 'option3', label: 'Projects' },
       ],
     },
   ];
