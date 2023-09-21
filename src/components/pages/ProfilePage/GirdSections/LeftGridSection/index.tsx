@@ -1,9 +1,9 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import AddIcon from "@mui/icons-material/Add";
 import { Typography } from "@mui/material";
 import EditIcon from "@mui/icons-material/Edit";
-import { profileData } from "../../../../../mock/profileData";
+import axios from "axios";
 import {
   StyleFive,
   StyleFour,
@@ -21,6 +21,34 @@ interface LanguageData {
   0: string;
   1: string;
 }
+interface ProfileData {
+  videoInstruction: {
+    title: string;
+  };
+  hoursPerWeek: {
+    title: string;
+    content: {
+      hours: string;
+      preference: string;
+    };
+  };
+  languages: {
+    title: string;
+    content: LanguageData[];
+  };
+  verifications: {
+    title: string;
+    content: string;
+  };
+  education: {
+    title: string;
+    content: {
+      university: string;
+      details: string;
+      date: string;
+    };
+  };
+}
 
 interface CustomButtonProps {
   icon: JSX.Element;
@@ -30,6 +58,24 @@ interface CustomButtonProps {
 }
 
 const LeftGridSection: React.FC = () => {
+  const [profileData, setProfileData] = useState<ProfileData | null>(null);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("http://localhost:8080/profileData"); // Replace with the actual URL of your JSON server
+        setProfileData(response.data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (!profileData) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <StyleParent>
       <StyleOne>
