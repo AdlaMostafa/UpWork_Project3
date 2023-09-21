@@ -1,5 +1,4 @@
-"use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
@@ -11,9 +10,8 @@ import {
   StyledIconTitle,
   StyledPropsalContent,
 } from "./style";
-import { connects } from "../../../../../../mock/connects";
 import { Typography } from "@mui/material";
-import EditIcon from "@mui/icons-material/Edit";
+import axios from "axios";
 
 function Section({ title, content, isOpen, onClick, isSubMenu = false }) {
   return (
@@ -36,6 +34,19 @@ function Section({ title, content, isOpen, onClick, isSubMenu = false }) {
 }
 
 export default function ConnectSection() {
+  const [connects, setConnects] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await axios.get("http://localhost:8080/connects");
+        setConnects(res.data);
+      } catch (error) {
+        console.error("Error Fetching Data:", error);
+      }
+    };
+    fetchData();
+  }, []);
+
   const [sections, setSections] = useState([
     {
       title: "Connects",
@@ -82,14 +93,6 @@ export default function ConnectSection() {
                 >
                   {item.title}
                 </Typography>
-                {/* <EditIcon
-                  sx={{
-                    borderRadius: "50%",
-                    fontSize: 26,
-                    border: "1px solid gray",
-                    color: "green",
-                  }}
-                /> */}
               </StyledIconTitle>
               <Typography variant="body2" sx={{ mt: 1, marginRight: "70px" }}>
                 {item.about}
@@ -142,7 +145,7 @@ export default function ConnectSection() {
             variant="body2"
             sx={{
               mt: 0.6,
-              margin:'5px 10px 10px 30px',
+              margin: "5px 10px 10px 30px",
             }}
           >
             <a
