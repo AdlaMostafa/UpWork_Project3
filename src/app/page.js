@@ -1,4 +1,4 @@
-
+'use client'
 import Header from '@/components/organism/Header'
 import SubFooter from '@/components/organism/SubFooter'
 import SupFooter from '@/components/organism/SupFooter'
