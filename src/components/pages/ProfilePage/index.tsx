@@ -9,9 +9,12 @@ import SecondRightPart from './GirdSections/RightGridSection/SecondRightPart'
 import ThirdRightPart from './GirdSections/RightGridSection/ThirdRightPart'
 import FourthGridSection from './GirdSections/RightGridSection/FourthGridSection'
 import FifthRightPart from './GirdSections/RightGridSection/FifthRightPart'
-import AdditionalSections from './AdditionalSections/index';
+import Header from '@/components/organism/Header'
+
 const ProfilePage:React.FC = () => {
   return (
+    <>
+     <Header/>
     <ProfileContainer>
       <StyleParent>
         <div className="section top-section">
@@ -37,6 +40,7 @@ const ProfilePage:React.FC = () => {
         </StyledSecondPart>
       </StyleParent>
     </ProfileContainer>
+    </>
   );
 };
 
