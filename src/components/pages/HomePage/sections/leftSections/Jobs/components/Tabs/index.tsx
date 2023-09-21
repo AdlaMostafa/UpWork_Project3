@@ -6,7 +6,6 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import JobInfo from "../jobDiv";
-
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
@@ -107,6 +106,7 @@ export default function JobTabs() {
           />
           <Tab
             label="Saved Jobs"
+
             {...a11yProps(2)}
             sx={{
               fontSize: "12px",
