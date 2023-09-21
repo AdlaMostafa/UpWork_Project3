@@ -18,8 +18,12 @@ import { Divider, TextField, Typography } from "@mui/material";
 import SignupTextFeild from "./SignupComponent/SignupTextFeild/index";
 import PasswordInput from "./SignupComponent/Password";
 import CheckboxLabels from "./SignupComponent/CheckBox";
+import LoginPage from "../../LoginPage/page";
 import Link from "next/link";
 const SignupForm = () => {
+  const handleSignupWithGoogle = () => {
+    window.location.href = "https://accounts.google.com";
+  };
   const [selectedValue,setSelectedValue] = useState('');
   const handleSelectChange = (event) => {
     setSelectedValue(event.target.value);
@@ -63,6 +67,7 @@ const SignupForm = () => {
                   marginLeft:"10px",
                   marginBottom:'10px',
                 }}
+                onClick={handleSignupWithGoogle}
               />
             </StyleGoogleButton>
             <Divider orientation="horizantal" variant="middle" flexItem>
@@ -133,7 +138,7 @@ const SignupForm = () => {
           </StyledButtonsParent>
           <Typography variant="body2" marginBottom="15px" color="text.secondary" align="center">
                 {"Already have an account?"}
-                <Link href='../../LoginPage' style={{color:"green",textDecoration:"none"}}>Login</Link>
+                <Link href={<LoginPage/>} style={{color:"green",textDecoration:"none"}}>Login</Link>
               </Typography>
         </form>
       </StyledSignupForm>
