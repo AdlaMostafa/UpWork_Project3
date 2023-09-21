@@ -57,7 +57,7 @@ const Header: React.FC<HeaderProps> = () => {
           value={selectedValue3}
           onChange={handleSelectChange3}
         />
-        <Link href="/home">Message</Link>
+        <Link href="/">Message</Link>
         <CustomizedInputBase />
         <StyleQueIcon>
           <QuestionMarkIcon />
