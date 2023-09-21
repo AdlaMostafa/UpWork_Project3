@@ -1,10 +1,9 @@
-'uses client'
-import React from 'react'
-import Image from 'next/image'
-import visit from '../../../../../../../public/assets/SocialMedia/visit.png'
-import { Link } from '@mui/material'
-import { linkData } from '../../../../../../mock/linksData'
-import { StyledLinksSection } from './style'
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import visit from "../../../../../../../public/assets/SocialMedia/visit.png";
+import { Link } from "@mui/material";
+import { StyledLinksSection } from "./style";
+import axios from "axios";
 
 interface LinkItem {
   id: number;
@@ -12,16 +11,32 @@ interface LinkItem {
 }
 
 const LinksSection: React.FC = () => {
+  const [links, setLinks] = useState<LinkItem[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await axios.get("http://localhost:8080/linkData");
+        setLinks(res.data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
     <StyledLinksSection>
-      {linkData.map((item: LinkItem) => (
-        <div key={item.id} style={{ display: 'flex', alignItems: 'center' }}>
-          <Link href='#' style={{ color: "black", marginRight: '8px' }}>{item.name}</Link>
-          <Image src={visit} alt='visit' width={16} height={16} />
+      {links.map((item: LinkItem) => (
+        <div key={item.id} style={{ display: "flex", alignItems: "center" }}>
+          <Link href="#" style={{ color: "black", marginRight: "8px" }}>
+            {item.name}
+          </Link>
+          <Image src={visit} alt="visit" width={16} height={16} />
         </div>
       ))}
     </StyledLinksSection>
-  )
-}
+  );
+};
 
-export default LinksSection
+export default LinksSection;
