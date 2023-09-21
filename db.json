@@ -1,0 +1,436 @@
+{
+  "connects": [
+    {
+      "id": "1",
+      "title": "Availability Badge",
+      "about": "Available now"
+    },
+    {
+      "id": "2",
+      "title": "Hours per week",
+      "about": "More than 30 hrs/week"
+    },
+    {
+      "id": "3",
+      "title": "Profile Visibility",
+      "about": "Public"
+    },
+    {
+      "id": "4",
+      "title": "Job Preference",
+      "about": "No preference set"
+    },
+    {
+      "id": "5",
+      "title": "My Categories",
+      "about": "Web Development"
+    }
+  ],
+  "countries": [
+    {
+      "id": 1,
+      "value": "Palestinian Territories",
+      "label": "Palestinian Territories"
+    },
+    {
+      "id": 2,
+      "value": "America",
+      "label": "America"
+    },
+    {
+      "id": 3,
+      "value": "Egypt",
+      "label": "Egypt"
+    },
+    {
+      "id": 4,
+      "value": "Moroco",
+      "label": "Moroco"
+    }
+  ],
+  "FifthRightPartData": [
+    {
+      "title": "Your Project Catalog",
+      "about": "Projects are a new way to earn on Upwork that helps you do more of the work you love to do. Create project offerings that highlight your strengths and attract more clients."
+    }
+  ],
+  "FirstRightPartData": [
+    {
+      "jobTitle": "FrontEnd developer (React js)",
+      "hourPrice": "$10.00/hr",
+      "about": [
+        "Adla Alinnabi",
+        "Im a developer experienced in building websites for small and medium-sized businesses. Whether youre trying to win work, list your services, or create a new online store, I can help"
+      ],
+      "skills": ["HTML", "CSS", "JS", "Redux", "Next.js"],
+      "projectManagement": "Full project management from start to finish",
+      "communication": "Regular communication is important to me, so let's keep in touch."
+    }
+  ],
+  "FooterData": [
+    {
+      "id": 1,
+      "items": ["About us", "FeedBack", "Community", ""]
+    },
+    {
+      "id": 2,
+      "items": [
+        "Trust,Safety&Security",
+        "Help&Support",
+        "Upwork Foundation",
+        ""
+      ]
+    },
+    {
+      "id": 3,
+      "items": [
+        "Terms of Service",
+        "Privacy Policy",
+        "CA Notice at Collection",
+        "Cookie Settings"
+      ]
+    },
+    {
+      "id": 4,
+      "items": [
+        "Accessibility",
+        "Desktop App",
+        "Cookie Policy",
+        "Enterprise Solution"
+      ]
+    }
+  ],
+  "helpData": [
+    {
+      "id": 1,
+      "title": "Important a certification",
+      "about": "Showing a credential may increase your chances of earning by 4 times",
+      "icon": "ArrowForwardIcon",
+      "image": "../../public/assets/SocialMedia/medalia.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Build your portfolio",
+      "about": "Adding a project may increase your chances of earning by 8 times",
+      "icon": "ArrowForwardIcon",
+      "image": "../../public/assets/SocialMedia/wood.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Get tips to find work",
+      "about": "Learn how to optimize search use Connects , and more to land your first job.",
+      "icon": "ArrowForwardIcon",
+      "image": "../../public/assets/SocialMedia/man.jpg"
+    }
+  ],
+  "JobDetails": [
+    {
+      "id": 1,
+      "title": "Get HTML,CSS,JS with bootstrap",
+      "time": ["Fiexed-price -Intermediate-Est:$30 -", "Posted 6 hours ago"],
+      "description": "rewrite the page https://www.topcv.vn/ with bootstraps.(reset classes,ids,...)including all effects",
+      "skills": [
+        "Bootstrp",
+        "CSS",
+        "HTML",
+        "Javascript",
+        "jQuery",
+        "HTML5",
+        "React",
+        "next",
+        "CSS5",
+        "HTML"
+      ],
+      "propsalTime": ["Proposal", ":Less than5"],
+      "price": ["$600"]
+    },
+    {
+      "id": 2,
+      "title": "Front-End Web Developer for E-commerce Website Redesign",
+      "time": ["Fiexed-price -Expert - Est:$30 -", "Posted, in 34 minutes"],
+
+"description": "We are in search of a skilled and creative Front-End Web Developer to lead the redesign of our e-commerce website. This project offers an exciting opportunity to revamp our online presence and create an engaging user experience. If youre passionate about web development and have a strong portfolio of front-end projects, we want to hear from you",
+      "skills": [
+        "Web Developmeent",
+        "Web Design",
+        "Word Press",
+        "HTML",
+        "jQuery",
+        "HTML5",
+        "React",
+        "redux"
+      ],
+      "propsalTime": ["Proposal", "20 to 50"],
+      "price": ["$100"]
+    },
+    {
+      "id": 3,
+      "title": "React.js Drag & Drop Widgets / Dashboard",
+      "time": [
+        "Fiexed-price -Intermediate -Est. Budget: $175 - ",
+        "Posted, 8 hours ago"
+      ],
+      "description": "Were looking at creating an interactive mock-dashboard (all components will use static data for the purpose of this brief), which enables user to drag-and-drop widgets and to drag-to-move widgets to change layout. Were looking for very beautiful design, matching the colour scheme in example image. Requirements: Please view the attached image for an example of how we would like this to work. ",
+      "skills": ["Web Application", "React", "PHP", "HTML"],
+      "propsalTime": ["Proposal", "15 to 20"],
+      "price": ["$50"]
+    },
+    {
+      "id": 4,
+      "title": "Front end developer require to create responsive HTML from html",
+      "time": ["Fiexed-price -Intermediate-Est:$50 -  ", "Posted 10 hours ago"],
+      "description": "I have HTML website pages for desktops/laptops. I am looking for a developer who can create a responsive version of the same html. ",
+      "skills": ["Bootstrp", "CSS", "Javascript", "HTML", "jQuery"],
+      "propsalTime": ["Proposal", "50+"],
+      "price": ["$30"]
+    },
+    {
+      "id": 5,
+      "title": "HI. I need help with a project created with viserbank.",
+      "time": [
+        "Hourly - Intermediate - Est. Time: Less than 1 month, Less than 30 hrs/week -",
+        "Posted 18 hours ago"
+      ],
+      "description": "I have HTML website pages for desktops/laptops. I am looking for a developer who can create a responsive version of the same html. ",
+      "skills": ["PSD to HTML", "CSS", "Javascript", "HTML", "Web Development"],
+      "propsalTime": ["Proposal", "15 to 25"],
+      "price": ["$200"]
+    },
+    {
+      "id": 6,
+      "title": "Fix a few small html/css bugs",
+      "time": [
+        "Fixed-price - Expert - Est. Budget: $5 -",
+        "Posted 8 hours ago"
+      ],
+      "description": "Fix a few bugs. 1. Our trustpilot widget does not center on screen for mobile version. also on desktop does not center properly. below the order captions now. Fix 2. Set limit to width of column, so if a filename is too long, it will take force it to take more than 1 line to display it. i.e. filename:",
+      "skills": ["HTML", "CSS", "Javascript", "HTML5", "Web Development"],
+      "propsalTime": ["Proposal", "20 to 50"],
+      "price": ["$600"]
+    }
+  ],
+
+"linkData": [
+    {
+      "id": 1,
+      "name": "Upwork Academy"
+    },
+    {
+      "id": 2,
+      "name": "Direct Contracts"
+    },
+    {
+      "id": 3,
+      "name": "Get Paid"
+    },
+    {
+      "id": 4,
+      "name": "Community & Forums"
+    },
+    {
+      "id": 5,
+      "name": "Help Center"
+    }
+  ],
+  "JobDetails2": [
+    {
+      "id": 1,
+      "title": "Build responsive WordPress site with booking/payment functionality",
+      "time": [
+        "Hourly: $15-$30 - Intermediate - Est. Time: More than 6 months, Less than 30 hrs/week -",
+        "Posted in 55 minutes"
+      ],
+      "description": "Ashenafi Wada is a recent computer engineering graduate with a sharp mind. He has excellent communication and cognitive abilities, is adaptive and dynamic, and has the ability to work both independently and in teams. He is also well-versed in computer science and engineering. Good at both front end and back end web development. knowledgeable",
+      "skills": ["CSS", "HTML", "Javascript", "jQuery", "HTML5"],
+      "propsalTime": ["Proposal", ":Less than4"],
+      "price": ["$600"]
+    },
+    {
+      "id": 2,
+      "title": "Front-End Web Developer for E-commerce Website Redesign",
+      "time": ["Fiexed-price -Expert - Est:$30 -", "Posted, in 34 minutes"],
+      "description": "We are in search of a skilled and creative Front-End Web Developer to lead the redesign of our e-commerce website. This project offers an exciting opportunity to revamp our online presence and create an engaging user experience. If youre passionate about web development and have a strong portfolio of front-end projects, we want to hear from you",
+      "skills": [
+        "Web Developmeent",
+        "Web Design",
+        "Word Press",
+        "HTML",
+        "jQuery",
+        "HTML5",
+        "React",
+        "redux"
+      ],
+      "propsalTime": ["Proposal", "20 to 50"],
+      "price": ["$100"]
+    },
+    {
+      "id": 3,
+      "title": "Image to word file",
+      "time": [
+        "Fixed-price - Intermediate - Est. Budget: $30 - ",
+        "Posted in 52 minutes"
+      ],
+      "description": "Need someone to retype some image screenshot document, into ms word document ",
+      "skills": ["English", "Copy writing", "Writing", "Typing", "Data Entry"],
+      "propsalTime": ["Proposal", "Less thsn 20"],
+      "price": ["$600"]
+    },
+    {
+      "id": 4,
+      "title": "Online Video Editor - MP4Box, Mux.js, FabricJS",
+      "time": [
+        "Hourly: $15-$25 - Expert - Est. Time: More than 6 months, Less than 30 hrs/week -   ",
+        "Posted in 41 minutes"
+      ],
+      "description": "We wanna add video editing features to ssemble.com - Animation (Preset, Keyframe) - Transition (Custom Shader) - And many more Tech stack - Mux.js - MP4 box - Fabric JS - WebGL - React If you have any similar experience on it, please apply for this position.",
+      "skills": ["FFmpeg", "Fabric", "Canvas"],
+      "propsalTime": ["Proposal", "50+"],
+      "price": ["$30"]
+    }
+  ],
+  "SecondRightPartData": {
+    "title": "Work Histor",
+    "about": "No work yet. Once you start getting hired on Upwork, your work with clients will show up here.",
+    "link": "Start your search"
+  },
+  "profileData": {
+    "videoInstruction": {
+      "title": "Video instruction",
+      "icon": "AddIcon"
+    },
+    "hoursPerWeek": {
+      "title": "Hours per week",
+      "icon": "EditIcon",
+      "content": {
+        "hours": "More than 30 hrs/week",
+        "preference": "No contract-to-hire preference set"
+      }
+    },
+    "languages": {
+      "title": "Languages",
+      "addIcon": "AddIcon",
+      "editIcon": "EditIcon",
+      "content": [
+        ["English", ": Fluent"],
+        ["Arabic", ": Native or Bilingual"]
+      ]
+    },
+    "verifications": {
+      "title": "Verifications",
+      "content": "Military Veteran"
+    },
+    "education": {
+      "title": "Education",
+      "addIcon": "AddIcon",
+      "content": {
+        "university": "AL-AZHAR UNIVERSITY-Gaza",
+        "details": "Bachelors degree, software engineering",
+        "date": "2021-2026(expected)"
+      }
+
+}
+  },
+  "selectData": [
+    {
+      "label": "Find Work",
+      "options": [
+        { "label": "Find Work", "value": 1 },
+        { "label": "Saved Jobs", "value": 2 },
+        { "label": "Proposal", "value": 3 },
+        { "label": "Profile", "value": 4 },
+        { "label": "My State", "value": 5 },
+        { "label": "My Project Dashboard", "value": 6 }
+      ]
+    },
+    {
+      "label": "My Jobs",
+      "options": [
+        { "label": "My Jobs", "value": 1 },
+        { "label": "All Contracts", "value": 2 },
+        { "label": "Work Diary", "value": 3 }
+      ]
+    },
+    {
+      "label": "Reports",
+      "options": [
+        { "label": "OvervIEW", "value": 1 },
+        { "label": "mY Reports", "value": 2 },
+        { "label": "Billings & Earning", "value": 3 },
+        { "label": "Connects Hostory", "value": 4 },
+        { "label": "Transaction History", "value": 5 },
+        { "label": "Certificate of Earning", "value": 6 }
+      ]
+    },
+    {
+      "label": "Jobs",
+      "options": [
+        { "value": "option1", "label": "Jobs" },
+        { "value": "option2", "label": "Talent" },
+        { "value": "option3", "label": "Projects" }
+      ]
+    }
+  ],
+  "ThirdRightPartData": {
+    "title": "Portfolio",
+    "about": "Talent who add portfolios to their profile are more likely to win work. (+20%)",
+    "link": "Add a portfolio"
+  },
+
+  "FirstLeftSection": {
+    "title": "Cut one Page Figam file to HTML",
+    "link": "Front-End Development",
+    "time": "Posted in 10 minutes",
+    "country": "WorlWide"
+  },
+  "SixLeftSection": [
+    {
+      "title": [
+        "Proposals :",
+        "Last viewed by client :",
+        "Interviewing :",
+        "Inites sent :",
+        "Unanswered invites :"
+      ]
+    },
+    {
+      "number": ["10 to 50", "in 45 minute", "2", "0", "0"]
+    }
+  ],
+  "ThirdLeftSection": [
+    {
+      "id": 1,
+      "icon": "<AccessTimeIcon/>",
+      "title": "Less than 30 hes/week",
+      "about": "Hourly"
+    },
+    {
+      "id": 2,
+      "icon": "<EventAvailableIcon/>",
+      "title": "1 to 3 months",
+      "about": "Project Length"
+    },
+    {
+      "id": 3,
+      "icon": "<PsychologyIcon/>",
+      "title": "Expert",
+      "about": "I am willing to pay higher rates\nfor most experienced freelance"
+    }
+  ],"ThirdLeftSectionJobPage":[
+    {
+      "title": [
+        "Palestine",
+        "82 jobs posted",
+        "$7.3k total spent",
+        "$9.62 /hr avg hourly rate paid"
+      ]
+    },
+    {
+      "about": [
+        "Jerusalem 12:22 pm",
+        "54% hire rate, 8open jobs",
+        "50 hires, 11 active",
+        "560 houes"
+      ]
+    }
+  ]
+}
