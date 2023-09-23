@@ -6,6 +6,7 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import JobInfo from "../jobDiv";
+
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
@@ -45,6 +46,8 @@ export default function JobTabs() {
   const [value, setValue] = React.useState(0);
   const [jobDetails, setJobDetails] = useState([]);
   const [jobDetails2, setJobDetails2] = useState([]);
+  const [savedJobs, setSavedJobs] = useState([]);
+  const [savedJobsCount, setSavedJobsCount] = useState(0);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -70,6 +73,12 @@ export default function JobTabs() {
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
+  };
+
+  const saveJob = (job) => {
+    const savedJobWithFavorite = { ...job, isFavorite: true };
+    setSavedJobs([...savedJobs, savedJobWithFavorite]);
+    setSavedJobsCount(savedJobsCount + 1);
   };
 
   return (
@@ -105,8 +114,7 @@ export default function JobTabs() {
             }}
           />
           <Tab
-            label="Saved Jobs"
-
+            label={`Saved Jobs (${savedJobsCount})`}
             {...a11yProps(2)}
             sx={{
               fontSize: "12px",
@@ -127,7 +135,7 @@ export default function JobTabs() {
         <div>
           {jobDetails.map((job) => (
             <div key={job.id}>
-              <JobInfo job={job} />
+              <JobInfo job={job} saveJob={saveJob} />
             </div>
           ))}
         </div>
@@ -140,14 +148,14 @@ export default function JobTabs() {
           }
         </Typography>
         {jobDetails2.map((job) => (
-          <JobInfo key={job.id} job={job} />
+          <JobInfo key={job.id} job={job} saveJob={saveJob} />
         ))}
       </CustomTabPanel>
 
       <CustomTabPanel value={value} index={2}>
-        <Typography variant="body2" color="black">
-          {"Content for the third tab"}
-        </Typography>
+        {savedJobs.map((job) => (
+          <JobInfo key={job.id} job={job} saveJob={saveJob} />
+        ))}
       </CustomTabPanel>
     </Box>
   );
