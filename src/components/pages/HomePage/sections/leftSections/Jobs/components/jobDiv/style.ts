@@ -18,7 +18,13 @@ export const StyledJobDiv = styled.div`
     margin-right: 5px;
   }
   .likeandDis {
-    margin-left: 620px;
+    margin-left: 660px;
+    display: flex;
+    align-items: center;
+    .Favorite{
+      margin-right: 20px;
+    }
+    /* justify-content: space-around; */
   }
 `;
 export const StyledVerifiedDiv = styled.div`
