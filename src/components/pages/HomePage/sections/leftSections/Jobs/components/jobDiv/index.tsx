@@ -30,6 +30,8 @@ import axios from "axios";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 import PsychologyIcon from "@mui/icons-material/Psychology";
+import StyledFavoriteIcon from "@/components/atoms/Favourite";
+import StyledDislikeIcon from "@/components/atoms/DisLike";
 const iconComponents = {
   AccessTimeIcon: AccessTimeIcon,
   EventAvailableIcon: EventAvailableIcon,
@@ -44,15 +46,22 @@ interface JobInfoProps {
     description: string;
     skills: string[];
     proposalTime: string[];
+    isSaved: boolean;
+    isFavorite: boolean;
   };
+  saveJob: (job: any) => void;
 }
 
-const JobInfo: React.FC<JobInfoProps> = ({ job }) => {
+const JobInfo: React.FC<JobInfoProps> = ({ job, saveJob }) => {
   const link = "https://mui.com/material-ui/";
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [selectedJob, setSelectedJob] = useState<JobInfoProps["job"] | null>(
     null
   );
+  const handleFavouriteClick = (event) => {
+    event.stopPropagation();
+    saveJob(job);
+  };
   const [isHovered, setIsHovered] = useState(false);
 
   const [sixLeftSection, setSixLeftSection] = useState<any | null>(null);
@@ -127,7 +136,15 @@ const JobInfo: React.FC<JobInfoProps> = ({ job }) => {
             {job.title}
           </Link>
           <div className="likeandDis" onClick={(e) => e.stopPropagation()}>
-            <LikeandDislikeGroup />
+            {/* <LikeandDislikeGroup /> */}
+            <div className="Favorite">
+              <StyledFavoriteIcon
+                isFavorite={job.isSaved} // Make sure to set this property correctly
+                onClick={handleFavouriteClick}
+              />
+            </div>
+
+            <StyledDislikeIcon />
           </div>
         </div>
         <Typography
