@@ -1,31 +1,32 @@
-'use client'
-import React, { useState } from 'react';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import React from "react";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 
-const StyledFavoriteIcon: React.FC = () => {
-  const [isFavorite, setIsFavorite] = useState<boolean>(false);
+interface StyledFavoriteIconProps {
+  isFavorite: boolean;
+  onClick: () => void;
+}
 
-  const toggleFavorite = () => {
-    setIsFavorite(!isFavorite);
-  };
-
+const StyledFavoriteIcon: React.FC<StyledFavoriteIconProps> = ({
+  isFavorite,
+  onClick,
+}) => {
   return (
     <div
       style={{
-        border: `2px solid ${isFavorite ? 'green' : 'lightGray'}`, 
-        borderRadius: '50%', 
-        width: 35, 
-        height: 35, 
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        cursor: 'pointer',
+        border: `2px solid ${isFavorite ? "green" : "lightGray"}`,
+        borderRadius: "50%",
+        width: 35,
+        height: 35,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        cursor: "pointer",
       }}
-      onClick={toggleFavorite}
+      onClick={onClick}
     >
       <FavoriteIcon
         style={{
-          color: isFavorite ? 'green' : 'gray', 
+          color: isFavorite ? "green" : "gray",
           fontSize: 32,
         }}
       />
@@ -34,4 +35,3 @@ const StyledFavoriteIcon: React.FC = () => {
 };
 
 export default StyledFavoriteIcon;
-
