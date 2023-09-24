@@ -62,7 +62,7 @@ const LeftGridSection: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/profileData"); // Replace with the actual URL of your JSON server
+        const response = await axios.get("http://localhost:8080/profileData"); 
         setProfileData(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
