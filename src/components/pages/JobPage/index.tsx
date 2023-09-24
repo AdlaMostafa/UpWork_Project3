@@ -23,15 +23,12 @@ import {
   Subsection,
 } from "./style";
 
-// Define iconComponents if it's not already defined
 const iconComponents = {
-  // Define your icon components here if needed
 };
 
 const StyledJobDrawerContent = styled.div`
   width: 1200px;
   padding: 5px;
-  /* Add your styling here */
 `;
 
 interface JobDrawerContentProps {
@@ -390,7 +387,7 @@ const JobDrawerContent: React.FC<JobDrawerContentProps> = ({
                   </div>
                 </Subsection>
                 <Subsection>
-                  <CopyLinkTextField link="Your Link Here" /> {/* Replace with your actual link */}
+                  <CopyLinkTextField link="Your Link Here" /> 
                 </Subsection>
               </RightSection>
             </StyleParent2>
