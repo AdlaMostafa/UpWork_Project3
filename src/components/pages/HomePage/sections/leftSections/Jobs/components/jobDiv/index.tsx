@@ -14,7 +14,6 @@ import verified from "../../../../../../../../../public/assets/SocialMedia/verif
 import Image from "next/image";
 import HalfRating from "../Rating";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import LikeandDislikeGroup from "@/components/molecules/LikeandDislikeGroup";
 import Drawer from "@mui/material/Drawer";
 import {
   LeftSection,
@@ -136,10 +135,9 @@ const JobInfo: React.FC<JobInfoProps> = ({ job, saveJob }) => {
             {job.title}
           </Link>
           <div className="likeandDis" onClick={(e) => e.stopPropagation()}>
-            {/* <LikeandDislikeGroup /> */}
             <div className="Favorite">
               <StyledFavoriteIcon
-                isFavorite={job.isSaved} // Make sure to set this property correctly
+                isFavorite={job.isSaved}
                 onClick={handleFavouriteClick}
               />
             </div>
