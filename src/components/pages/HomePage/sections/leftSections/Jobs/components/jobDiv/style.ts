@@ -24,7 +24,6 @@ export const StyledJobDiv = styled.div`
     .Favorite{
       margin-right: 20px;
     }
-    /* justify-content: space-around; */
   }
 `;
 export const StyledVerifiedDiv = styled.div`

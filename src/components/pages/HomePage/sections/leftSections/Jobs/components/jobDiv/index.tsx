@@ -23,7 +23,7 @@ import {
   StyleParent1,
 } from "./style";
 import CustomButton from "@/components/atoms/Button";
-import FavoriteIcon from "@mui/icons-material/Favorite";
+import FavoriteIcon from "@mui/icons-material/FavoriteBorder";
 import CopyLinkTextField from "../../../../../../../../components/atoms/CopyLinkTextFeild";
 import axios from "axios";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
@@ -54,12 +54,17 @@ interface JobInfoProps {
 const JobInfo: React.FC<JobInfoProps> = ({ job, saveJob }) => {
   const link = "https://mui.com/material-ui/";
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isFavourite, setIsFavourite] = useState(job.isFavorite);
   const [selectedJob, setSelectedJob] = useState<JobInfoProps["job"] | null>(
     null
   );
-  const handleFavouriteClick = (event) => {
+  const handleFavouriteClick = (event: React.MouseEvent) => {
     event.stopPropagation();
-    saveJob(job);
+    setIsFavourite(!isFavourite);
+    saveJob({
+      ...job,
+      isFavourite: !isFavourite,
+    });
   };
   const [isHovered, setIsHovered] = useState(false);
 
@@ -137,7 +142,7 @@ const JobInfo: React.FC<JobInfoProps> = ({ job, saveJob }) => {
           <div className="likeandDis" onClick={(e) => e.stopPropagation()}>
             <div className="Favorite">
               <StyledFavoriteIcon
-                isFavorite={job.isSaved}
+                isFavorite={isFavourite}
                 onClick={handleFavouriteClick}
               />
             </div>
