@@ -189,7 +189,7 @@ export default function ConnectSection() {
           content={section.content}
           isOpen={section.isOpen}
           onClick={() => toggleSection(index)}
-          isSubMenu={index === 0} // First section is a sub-menu
+          isSubMenu={index === 0}
         />
       ))}
     </StyledConnectSection>
