@@ -4,7 +4,7 @@ import Stack from '@mui/material/Stack';
 
 export default function RatingSize() {
   const customStyle = {
-    color: 'green', // Change this to your desired color
+    color: 'green',
   };
 
   return (
