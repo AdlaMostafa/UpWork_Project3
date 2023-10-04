@@ -21,7 +21,7 @@ const LoginForm: React.FC = () => {
 
   const handleLoginWithGoogle = () => {
     window.location.href = "https://accounts.google.com";
-  };
+  }; 
 
   const handleLoginWithEmail = () => {
     const email = "user123@gmail.com";
