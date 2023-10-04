@@ -26,7 +26,7 @@ const StyledDislikeIcon: React.FC = () => {
       <ThumbDownIcon
         style={{
           color: isDisliked ? 'red' : 'gray',
-          fontSize: 32, 
+          fontSize: 28, 
         }}
       />
     </div>
