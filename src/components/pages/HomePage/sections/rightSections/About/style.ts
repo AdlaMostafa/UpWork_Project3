@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledAboutSecrion = styled.div`
-/* background-color: yellow; */
 display: flex;
 align-items: center;
 flex-direction: column;
