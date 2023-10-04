@@ -1,16 +1,15 @@
-'use client';
+"use client";
 import React, { useEffect, useState } from "react";
-import Drawer from "@mui/material/Drawer";
 import Link from "next/link";
 import Image from "next/image";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import CustomButton from "@/components/atoms/Button";
-import CopyLinkTextField from '../../../components/atoms/CopyLinkTextFeild'; 
+import CopyLinkTextField from "../../../components/atoms/CopyLinkTextFeild";
 import styled from "styled-components";
 import { Chip, Typography } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import HalfRating from '../../../components/pages/HomePage/sections/leftSections/Jobs/components/Rating';
-import verified from '../../../../public/assets/SocialMedia/verified.png';
+import HalfRating from "../../../components/pages/HomePage/sections/leftSections/Jobs/components/Rating";
+import verified from "../../../../public/assets/SocialMedia/verified.png";
 import axios from "axios";
 import {
   LeftSection,
@@ -23,8 +22,7 @@ import {
   Subsection,
 } from "./style";
 
-const iconComponents = {
-};
+const iconComponents = {};
 
 const StyledJobDrawerContent = styled.div`
   width: 1200px;
@@ -160,9 +158,7 @@ const JobDrawerContent: React.FC<JobDrawerContentProps> = ({
                   <StyleThirdSection>
                     {thirdLeftSection.map((item) => (
                       <div key={item.id} className="content">
-                        <div className="icon">
-                          {iconComponents[item.icon]}
-                        </div>
+                        <div className="icon">{iconComponents[item.icon]}</div>
                         <div className="about">
                           <Typography
                             variant="body2"
@@ -381,13 +377,12 @@ const JobDrawerContent: React.FC<JobDrawerContentProps> = ({
                             </Typography>
                           </Typography>
                         )
-                      )
-                     }
+                      )}
                     </div>
                   </div>
                 </Subsection>
                 <Subsection>
-                  <CopyLinkTextField link="Your Link Here" /> 
+                  <CopyLinkTextField link="Your Link Here" />
                 </Subsection>
               </RightSection>
             </StyleParent2>
