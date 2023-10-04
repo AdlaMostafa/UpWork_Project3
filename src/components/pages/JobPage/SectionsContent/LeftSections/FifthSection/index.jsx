@@ -1,10 +1,10 @@
-import { Chip } from '@mui/material';
-import React from 'react';
-import { jobDetails } from '../../../../../../mock/jobData';
-import { StyleThirdSection } from './style';
+import { Chip } from "@mui/material";
+import React from "react";
+import { jobDetails } from "../../../../../../mock/jobData";
+import { StyleThirdSection } from "./style";
 
 const FifthSection = () => {
-  const skills = jobDetails[4].skills; // Get the skills array from jobDetails[4]
+  const skills = jobDetails[4].skills;
 
   return (
     <StyleThirdSection>
@@ -14,15 +14,14 @@ const FifthSection = () => {
           <Chip
             key={index}
             label={skill}
-            // style={{ marginBottom: '0px' }}
             variant="outlined"
             sx={{
-              color: 'green',
-              fontWeight:'BOLD',
-              textDecoration:'underline',
-              backgroundColor: '#dbf2db',
-              marginTop: '10px',
-              marginBottom: '10px',
+              color: "green",
+              fontWeight: "BOLD",
+              textDecoration: "underline",
+              backgroundColor: "#dbf2db",
+              marginTop: "10px",
+              marginBottom: "10px",
             }}
           />
         ))}
