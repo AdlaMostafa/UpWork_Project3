@@ -1,21 +1,21 @@
-'use client'
-import * as React from 'react';
-import Button from '@mui/material/Button';
-import Dialog from '@mui/material/Dialog';
-import DialogContent from '@mui/material/DialogContent';
-import DialogActions from '@mui/material/DialogActions';
+"use client";
+import * as React from "react";
+import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import DialogContent from "@mui/material/DialogContent";
+import DialogActions from "@mui/material/DialogActions";
 import EditIcon from "@mui/icons-material/Edit";
-import Chip from '@mui/material/Chip';
-import Autocomplete from '@mui/material/Autocomplete';
-import TextField from '@mui/material/TextField';
-import Stack from '@mui/material/Stack';
-import { DialogContentText } from '@mui/material';
+import Chip from "@mui/material/Chip";
+import Autocomplete from "@mui/material/Autocomplete";
+import TextField from "@mui/material/TextField";
+import Stack from "@mui/material/Stack";
+import { DialogContentText } from "@mui/material";
 
 export default function EditableAlertDialog() {
   const [open, setOpen] = React.useState(false);
   const [showAutocomplete, setShowAutocomplete] = React.useState(false);
   const [selectedSkills, setSelectedSkills] = React.useState([]);
-  const [newSkill, setNewSkill] = React.useState('');
+  const [newSkill, setNewSkill] = React.useState("");
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -40,9 +40,9 @@ export default function EditableAlertDialog() {
   };
 
   const handleAddNewSkill = () => {
-    if (newSkill.trim() !== '') {
+    if (newSkill.trim() !== "") {
       setSelectedSkills([...selectedSkills, { title: newSkill }]);
-      setNewSkill('');
+      setNewSkill("");
     }
   };
 
@@ -54,8 +54,8 @@ export default function EditableAlertDialog() {
           fontSize: 26,
           border: "1px solid gray",
           color: "green",
-          marginLeft: '20px',
-          cursor: 'pointer'
+          marginLeft: "20px",
+          cursor: "pointer",
         }}
         onClick={handleEditClick}
       />
@@ -79,7 +79,7 @@ export default function EditableAlertDialog() {
                   <TextField
                     {...params}
                     variant="standard"
-                    label=''
+                    label=""
                     placeholder="Skills"
                   />
                 )}
@@ -91,11 +91,13 @@ export default function EditableAlertDialog() {
                 value={newSkill}
                 onChange={handleNewSkillChange}
               />
-              <Button variant="contained" onClick={handleAddNewSkill} 
-              style={{
-                color:'white',
-                backgroundColor:'green'
-              }}
+              <Button
+                variant="contained"
+                onClick={handleAddNewSkill}
+                style={{
+                  color: "white",
+                  backgroundColor: "green",
+                }}
               >
                 Add Skill
               </Button>
@@ -107,15 +109,20 @@ export default function EditableAlertDialog() {
           )}
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} style={{
-                color:'white',
-                backgroundColor:'green'
-              }}>Cancel</Button>
           <Button
-          style={{
-            color:'white',
-            backgroundColor:'green'
-          }}
+            onClick={handleClose}
+            style={{
+              color: "white",
+              backgroundColor: "green",
+            }}
+          >
+            Cancel
+          </Button>
+          <Button
+            style={{
+              color: "white",
+              backgroundColor: "green",
+            }}
             onClick={() => {
               handleClose();
               console.log(selectedSkills);
@@ -132,13 +139,13 @@ export default function EditableAlertDialog() {
             <Chip
               key={index}
               label={skill.title}
-              style={{ marginBottom: '0px' }}
+              style={{ marginBottom: "0px" }}
               variant="outlined"
               sx={{
-                color:'white',
-                backgroundColor:'green',
-                marginTop:'10px',
-                marginBottom:'10px'
+                color: "white",
+                backgroundColor: "green",
+                marginTop: "10px",
+                marginBottom: "10px",
               }}
             />
           ))}
@@ -149,16 +156,16 @@ export default function EditableAlertDialog() {
 }
 
 const topFrontEndSkills = [
-  { title: 'CSS' },
-  { title: 'HTML' },
-  { title: 'CSS5' },
-  { title: 'HTML5' },
-  { title: 'JavaScript' },
-  { title: 'React' },
-  { title: 'ResponsiveWebsites' },
-  { title: 'Next.js' },
-  { title: 'Redux' },
-  { title: 'Context' },
-  { title: 'Figma' },
-  { title: 'PhotoShop' },
+  { title: "CSS" },
+  { title: "HTML" },
+  { title: "CSS5" },
+  { title: "HTML5" },
+  { title: "JavaScript" },
+  { title: "React" },
+  { title: "ResponsiveWebsites" },
+  { title: "Next.js" },
+  { title: "Redux" },
+  { title: "Context" },
+  { title: "Figma" },
+  { title: "PhotoShop" },
 ];

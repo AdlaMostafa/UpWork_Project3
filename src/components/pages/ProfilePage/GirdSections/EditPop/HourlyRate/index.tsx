@@ -8,7 +8,7 @@ import FormControl from "@mui/material/FormControl";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import InputAdornment from "@mui/material/InputAdornment";
 import CustomButton from "@/components/atoms/Button";
-import { StyledDivhourlyrate } from "./style"; // Import your styled component here
+import { StyledDivhourlyrate } from "./style";
 
 const HourlyRate: React.FC = () => {
   const [open, setOpen] = useState(false);

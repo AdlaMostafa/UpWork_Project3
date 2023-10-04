@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
@@ -10,7 +10,11 @@ interface EditAboutProps {
   onCancel: () => void;
 }
 
-const EditAbout: React.FC<EditAboutProps> = ({ initialAbout, onSave, onCancel }) => {
+const EditAbout: React.FC<EditAboutProps> = ({
+  initialAbout,
+  onSave,
+  onCancel,
+}) => {
   const [editedAbout, setEditedAbout] = useState(initialAbout);
 
   const handleSave = () => {
