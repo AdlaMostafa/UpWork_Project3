@@ -1,6 +1,5 @@
 import React from "react";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-
+import FavoriteIcon from '@mui/icons-material/FavoriteBorder';
 interface StyledFavoriteIconProps {
   isFavorite: boolean;
   onClick: () => void;
@@ -15,8 +14,8 @@ const StyledFavoriteIcon: React.FC<StyledFavoriteIconProps> = ({
       style={{
         border: `2px solid ${isFavorite ? "green" : "lightGray"}`,
         borderRadius: "50%",
-        width: 35,
-        height: 35,
+        width: 32,
+        height: 31,
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -27,7 +26,7 @@ const StyledFavoriteIcon: React.FC<StyledFavoriteIconProps> = ({
       <FavoriteIcon
         style={{
           color: isFavorite ? "green" : "gray",
-          fontSize: 32,
+          fontSize: 28,
         }}
       />
     </div>
